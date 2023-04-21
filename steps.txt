@@ -1,0 +1,33 @@
+-spring initiliazr
+***our base***
+-create an entity,controller,repository, service packages
+-configuring application.proporties after creating database in the mysql
+-create our entity which a java class for student
+    -writing the items(id, lastName...)
+    -generate the getters and setters
+    -generate construtor for field
+    -should create also default constuctor
+    -add necessary @
+    -add primary key @ID
+    -add @column for the columns
+-Create an interface StudentRepository in repo package and the interface extends from student situated in entity and be wrotten<class(student here), pk's type(Long here) >
+    -we dont have to add @repository like we did for entity
+-Create an interface(layer) StudentService in service package and create new package in service package named impl
+-create a class inside impl package named StudentServiceImpl
+-create a controller layer which means a class named StudentController and add inside it at first the @Controller
+***implement List Students features***
+-fill in StudentService with list of students
+-fill in StudentController with list of students method which is defined in StudentService and in StudentServiceimpl
+-Creating html file with the langage of thymeleaf and filling it (which means create the view)
+-fill in main file(StudentManagementSystemApplication)
+***implement Add Students feature***
+-fill in StudentController and create student object to hold student from data
+-use a method save student which is defined in StudentService and in StudentServiceimpl
+***implement Update Students feature***
+-Add necessary fcts to StudentService
+-Write the detail of fcts in service impl
+-add link and logic to controller
+***implement Delete Students feature***
+-Add button to html
+-fill in StudentService and service impl
+-fill in Controller
